@@ -30,7 +30,7 @@ const Navbar = () => {
   }, [router.pathname]);
 
   return (
-    <div className="absolute top-6 left-0 w-full flex justify-center items-center">
+    <div className="fixed top-6 left-0 w-full flex justify-center items-center">
       <div className="relative flex flex-row items-center gap-x-4  px-4 py-2 rounded-full  ">
         <motion.div
           className="absolute top-0 left-0 h-full bg-white/40 rounded-full shadow-lg"

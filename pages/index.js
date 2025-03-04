@@ -24,8 +24,8 @@ const Index = () => {
         <div className="bg-[#D4C8BE] w-1/2 h-dvh relative flex justify-center items-center font-serif font-semibold text-7xl overflow-hidden">
           <motion.div
             className="absolute top-4 right-4 text-white text-6xl"
-            animate={{ rotate: 360 }} 
-            transition={{ repeat: Infinity, duration: 5, ease: "linear" }} 
+            animate={{ rotate: 360 }}
+            transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
           >
             <FaReact />
           </motion.div>
@@ -43,6 +43,30 @@ const Index = () => {
         </div>
 
         <Navbar />
+      </div>
+      <div className="w-full h-dvh flex">
+        <div className="w-1/2 h-dvh bg-[#EFE6D9]">
+          <div className="flex flex-col items-center justify-center h-screen text-center">
+            <div className="text-[#622A1F] font-[M_PLUS_Rounded_1c] text-5xl font-bold">
+              Hello I'm Chanasorn Khemnak
+            </div>
+            <div className="max-w-2xl mt-4 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-justify text-xl">
+              A passionate web developer with experience in designing and
+              developing responsive web applications. I specialize in front-end
+              development and have expertise in modern web technologies such as
+              React, Next.js, JavaScript, and Node.js. I enjoy optimizing system
+              performance and constantly seek opportunities to expand my skill
+              set.
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2 h-dvh bg-[#F6F7F0] flex items-center justify-center">
+          <img
+            src="/profile1.jpg"
+            alt="Profile Image"
+            className="w-[80%] h-auto object-contain border-4 border-[#622A1F] rounded-lg shadow-lg"
+          />
+        </div>
       </div>
     </>
   );
