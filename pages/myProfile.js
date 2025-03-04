@@ -2,7 +2,7 @@ import React from 'react'
 import Navbar from './component/navbar'
 const myProfile = () => {
   return (
-  <div className='bg-white w-full h-dvh'>
+  <div className='w-full h-dvh bg-[#D4C8BE]'>
     <Navbar/>
   </div>
    
