@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Navbar from "./component/navbar";
 import { FaReact } from "react-icons/fa";
+
 const Index = () => {
   const fullText = "Frontend Developer";
   const router = useRouter();
@@ -46,26 +47,36 @@ const Index = () => {
       </div>
       <div className="w-full h-dvh flex">
         <div className="w-1/2 h-dvh bg-[#EFE6D9]">
-          <div className="flex flex-col items-center justify-center h-screen text-center">
-            <div className="text-[#622A1F] font-[M_PLUS_Rounded_1c] text-5xl font-bold">
+          <div className="flex flex-col items-center justify-center h-screen text-center px-6">
+            <h1 className="text-[#622A1F] font-[M_PLUS_Rounded_1c] text-4xl font-extrabold leading-tight">
               Hello I'm Chanasorn Khemnak
-            </div>
-            <div className="max-w-2xl mt-4 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-justify text-xl">
-              A passionate web developer with experience in designing and
-              developing responsive web applications. I specialize in front-end
-              development and have expertise in modern web technologies such as
-              React, Next.js, JavaScript, and Node.js. I enjoy optimizing system
-              performance and constantly seek opportunities to expand my skill
-              set.
-            </div>
+            </h1>
+            <p className="max-w-2xl mt-6 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-lg text-justify leading-relaxed">
+              A passionate web developer with a keen eye for crafting dynamic
+              and responsive web experiences. Specializing in front-end
+              development, I leverage modern technologies like
+              <strong className="mr-2">
+                Vue.js, Next.js, JavaScript TailwindCss and Node.js
+              </strong>
+              to build seamless digital solutions. I thrive on optimizing system
+              performance and continuously evolving my skills to stay ahead in
+              the ever-changing tech landscape.
+            </p>
           </div>
         </div>
         <div className="w-1/2 h-dvh bg-[#F6F7F0] flex items-center justify-center">
           <img
             src="/profile1.jpg"
             alt="Profile Image"
-            className="w-[80%] h-auto object-contain border-4 border-[#622A1F] rounded-lg shadow-lg"
+            className="w-[80%] h-auto object-contain border-4 border-[#622A1F] rounded-lg shadow-lg transition-all duration-300  hover:scale-110"
           />
+        </div>
+      </div>
+      <div className="w-full h-72 bg-[#E9DAD0]">
+        <div className="absolute bottom-[-1050px] left-36 h-80 bg-[#D4BAB0] w-lg shadow-lg rounded-lg">
+          <div className="mt-16 ml-8 text-[#622A1F] font-[M_PLUS_Rounded_1c] font-semibold ">
+            STAY CONNECTED
+          </div>
         </div>
       </div>
     </>
