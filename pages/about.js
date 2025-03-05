@@ -63,8 +63,11 @@ const About = () => {
 
         <div ref={seeMoreRef} className="w-full h-dvh flex">
           <div className="bg-[#E7DFD5] w-1/2 h-dvh ">
-            <div className="flex justify-center text-[#622A1F] mt-40 text-4xl font-semibold font-[M_PLUS_Rounded_1c]">
-              My Tech Stackyyyy
+            <div
+              className="flex justify-center mt-40 text-4xl font-semibold font-[M_PLUS_Rounded_1c] 
+            bg-[#976C62] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)]"
+            >
+              My Tech Stack
             </div>
 
             <div className="mt-10 flex items-center justify-center text-black gap-2">
@@ -109,7 +112,6 @@ const About = () => {
                   <SiMysql className="text-2xl text-blue-500" />
                   <span className="text-lg">MySQL</span>
                 </div>
-               
               </div>
             </div>
           </div>
