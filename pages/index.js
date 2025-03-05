@@ -3,16 +3,15 @@ import Head from "next/head";
 import { motion } from "framer-motion";
 import { useRouter } from "next/router";
 import Navbar from "./component/navbar";
-import { FaReact } from "react-icons/fa";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 const Index = () => {
   const fullText = "Frontend Developer";
   const router = useRouter();
-  const contact=()=>{
-    router.push('./contact')
-  }
+  const contact = () => {
+    router.push("./contact");
+  };
   return (
     <>
       <Head>
@@ -27,15 +26,7 @@ const Index = () => {
           />
         </div>
 
-        <div className="bg-[#D4C8BE] w-1/2 h-dvh relative flex justify-center items-center font-serif font-semibold text-7xl overflow-hidden">
-          <motion.div
-            className="absolute top-4 right-4 text-white text-6xl"
-            animate={{ rotate: 360 }}
-            transition={{ repeat: Infinity, duration: 5, ease: "linear" }}
-          >
-            <FaReact />
-          </motion.div>
-
+        <div className="bg-[#D4C8BE] w-1/2 h-dvh relative flex justify-center items-center font-serif font-semibold text-6xl overflow-hidden">
           <div className="relative flex items-center">
             <motion.div
               className="overflow-hidden whitespace-nowrap text-[#622A1F] font-[M_PLUS_Rounded_1c]"
@@ -56,7 +47,7 @@ const Index = () => {
             <h1 className="text-[#622A1F] font-[M_PLUS_Rounded_1c] text-4xl font-extrabold leading-tight">
               Hello I'm Chanasorn Khemnak
             </h1>
-            <p className="max-w-2xl mt-6 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-lg text-justify leading-normal ">
+            <p className="max-w-xl mt-6 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-lg text-justify leading-normal ">
               A passionate web developer with a keen eye for crafting dynamic
               and responsive web experiences. Specializing in front-end
               development, I leverage modern technologies like
@@ -79,7 +70,7 @@ const Index = () => {
       </div>
       <div className="w-full h-96 flex bg-[#E9DAD0] relative">
         <div className="w-1/2 h-72 relative">
-          <div className="absolute bottom-[-24] left-60 h-96 bg-[#D4BAB0] w-lg shadow-lg rounded-lg">
+          <div className="absolute bottom-[-24] left-44 h-96 bg-[#D4BAB0] w-lg shadow-lg rounded-lg">
             <div className="mt-16 ml-8 text-[#622A1F] font-[M_PLUS_Rounded_1c] font-semibold">
               STAY CONNECTED
               <div className="mt-5">
@@ -89,7 +80,8 @@ const Index = () => {
                 <p className="font-[M_PLUS_Rounded_1c] font-bold text-4xl mt-5">
                   great thing together
                 </p>
-                <button onClick={contact}
+                <button
+                  onClick={contact}
                   className="cursor-pointer bg-[#622A1F]  text-white font-semibold py-2 px-5 
                 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-125 mt-20"
                 >
@@ -103,15 +95,15 @@ const Index = () => {
           <div className="text-black mt-4 text-xl font-[M_PLUS_Rounded_1c] font-semibol ml-2">
             CONTACT ME
           </div>
-          <div className="text-black mt-6 ml-2 flex items-center space-x-2 text-xl">
+          <div className="text-black mt-6 ml-2 flex items-center space-x-2 text-md">
             <FaPhoneAlt />
             <span>095-8462169</span>
           </div>
-          <div className="text-black mt-5 ml-2 flex items-center space-x-2 text-xl">
+          <div className="text-black mt-5 ml-2 flex items-center space-x-2 text-md">
             <IoMail />
             <span>chanasorn.kn@gmail.com</span>
           </div>
-          <div className="text-black mt-5 ml-2 flex items-center space-x-2 text-xl">
+          <div className="text-black mt-5 ml-2 flex items-center space-x-2 text-md">
             <FaGithub />
             <span>https://github.com/ChanasornK/Profile.git</span>
           </div>

@@ -10,6 +10,9 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+import { FaGithub } from "react-icons/fa";
 const About = () => {
   const seeMoreRef = useRef(null); // สร้าง ref สำหรับ div ที่ต้องการเลื่อนไปหา
   const handleScroll = () => {
@@ -22,11 +25,13 @@ const About = () => {
         <Navbar />
         <div className="w-full h-dvh bg-[#D4C8BE] flex items-center justify-center px-32">
           <div className="w-1/2 text-[#622A1F] font-[M_PLUS_Rounded_1c]">
-            <h2 className="text-lg font-bold ml-52">MORE ABOUT ME</h2>
-            <h1 className="mt-5 text-5xl font-bold ml-52">
+            <h2 className="text-lg font-bold ml-40 mt-10]">
+              MORE ABOUT ME
+            </h2>
+            <h1 className="mt-4 text-5xl font-bold ml-40  bg-[#976C62] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)] ">
               Frontend Developer
             </h1>
-            <p className="mt-10 text-lg font-bold leading-relaxed w-[575px] ml-52 tracking-normal text-justify text-[#7F423D]">
+            <p className="mt-10 text-lg font-bold leading-relaxed w-[575px] ml-40  tracking-normal text-justify text-[#7F423D]">
               I'm Chanasorn Khemnak a passionate frontend developer dedicated to
               crafting seamless and engaging web experience With a strong eye
               for design and performance I specialize in creating intuitive
@@ -34,23 +39,17 @@ const About = () => {
               React, Next.js and modern UI/UX principles always striving to push
               the boundaries of frontend development.
               <br />
-              <br />
-              When I'm not coding, I'm exploring new trends in design, fine
-              tuning animations and staying inspired by the ever evolving tech
-              world. I believe in the perfect blend of creativity and logic
-              ensuring that every project I work on delivers both beauty and
-              functionality.
             </p>
             <button
               onClick={handleScroll}
-              className="cursor-pointer bg-[#622A1F] text-white font-semibold py-2 px-5 ml-52
+              className="cursor-pointer bg-[#622A1F] text-white font-semibold py-2 px-5 ml-40 
                 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-125 mt-14"
             >
               See More
             </button>
           </div>
 
-          <div className="w-1/2 flex justify-center mt-20 ml-10">
+          <div className="w-1/2 flex justify-center mt-20 ml-40">
             <div className="w-96 h-96 border-2 border-[#622A1F] rounded-full overflow-hidden">
               <img
                 className="w-full h-full object-cover"
@@ -70,7 +69,7 @@ const About = () => {
               My Tech Stack
             </div>
 
-            <div className="mt-10 flex items-center justify-center text-black gap-2">
+            <div className="mt-5 flex items-center justify-center text-black gap-2">
               <div className="mt-10 grid grid-cols-3 gap-6 justify-center">
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md ">
                   <RiNextjsFill clasyyyyyyyyyyyysName="text-2xl " />
@@ -118,6 +117,7 @@ const About = () => {
           <div className="bg-[#BA8C7B] w-1/2 h-dvh "></div>
         </div>
       </div>
+      
     </>
   );
 };
