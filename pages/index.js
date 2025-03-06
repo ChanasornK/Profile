@@ -9,13 +9,12 @@ import { FaGithub } from "react-icons/fa";
 const Index = () => {
   const fullText = "Frontend Developer";
   const router = useRouter();
-  const contact = () => {
-    router.push("./contact");
-  };
+  
   return (
     <>
       <Head>
-        <title>My Portfolio</title>
+        <title>Home</title>
+        <link rel="icon" href="/logo.png" type="image/png" />
       </Head>
       <div className="w-full h-dvh flex relative">
         <div className="bg-white w-1/2 h-dvh relative">
@@ -81,7 +80,7 @@ const Index = () => {
                   great thing together
                 </p>
                 <button
-                  onClick={contact}
+                 
                   className="cursor-pointer bg-[#622A1F]  text-white font-semibold py-2 px-5 
                 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-125 mt-20"
                 >

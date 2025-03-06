@@ -1,5 +1,6 @@
 import React, { useRef } from "react";
 import Navbar from "./component/navbar";
+import Head from "next/head";
 import { RiNextjsFill } from "react-icons/ri";
 import { FaReact } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
@@ -10,6 +11,11 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
+import { IoPeopleSharp } from "react-icons/io5";
+import { FcCollaboration } from "react-icons/fc";
+import { FaBookOpen } from "react-icons/fa6";
+import { MdOutlineSyncProblem } from "react-icons/md";
+import { AiOutlineFieldTime } from "react-icons/ai";
 const About = () => {
   const seeMoreRef = useRef(null); // สร้าง ref สำหรับ div ที่ต้องการเลื่อนไปหา
   const handleScroll = () => {
@@ -18,13 +24,15 @@ const About = () => {
 
   return (
     <>
+      <Head>
+        <title>About Me </title>
+        <link rel="icon" href="/logo.png" type="image/png" />
+      </Head>
       <div className="bg-white w-full h-dvh">
         <Navbar />
         <div className="w-full h-dvh bg-[#D4C8BE] flex items-center justify-center px-32">
           <div className="w-1/2 text-[#622A1F] font-[M_PLUS_Rounded_1c]">
-            <h2 className="text-lg font-bold ml-40 mt-10]">
-              MORE ABOUT ME
-            </h2>
+            <h2 className="text-lg font-bold ml-40 mt-10]">MORE ABOUT ME</h2>
             <h1 className="mt-4 text-5xl font-bold ml-40  bg-[#976C62] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)] ">
               Frontend Developer
             </h1>
@@ -69,7 +77,7 @@ const About = () => {
             <div className="mt-5 flex items-center justify-center text-black gap-2">
               <div className="mt-10 grid grid-cols-3 gap-6 justify-center">
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md ">
-                  <RiNextjsFill clasyyyyyyyyyyyysName="text-2xl " />
+                  <RiNextjsFill className="text-2xl " />
                   <span className="text-lg ">NextJS</span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
@@ -111,10 +119,40 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#BA8C7B] w-1/2 h-dvh "></div>
+          <div className="bg-[#BA8C7B] w-1/2 h-dvh ">
+            <div
+              className="flex justify-center mt-40 text-4xl font-semibold font-[M_PLUS_Rounded_1c] 
+            bg-[#E7DFD5] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)]"
+            >
+              My Soft Skill
+            </div>
+            <div className="mt-6 flex items-center justify-center text-black gap-2">
+              <div className="mt-14 grid grid-cols-3 gap-8 justify-center">
+                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md  ">
+                  <IoPeopleSharp className="text-2xl text-blue-500 " />
+                  <span className="text-sm font-[M_PLUS_Rounded_1c] ">Communication</span>
+                </div>
+                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
+                  <FcCollaboration className="text-2xl text-blue-500" />
+                  <span className="text-sm">Collaboration</span>
+                </div>
+                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
+                  <FaBookOpen className="text-2xl text-pink-500 " />
+                  <span className="text-sm">Quick Learner</span>
+                </div>
+                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
+                  <MdOutlineSyncProblem className="text-2xl text-red-500 " />
+                  <span className="text-sm">Problem solving</span>
+                </div>
+                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
+                <AiOutlineFieldTime className="text-2xl text-green-400 " />
+                  <span className="text-sm">Time management</span>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      
     </>
   );
 };

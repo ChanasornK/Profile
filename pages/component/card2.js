@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 
-const Card = () => {
+const Card2 = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
     <>
       <div
-        className="ml-20 w-2xl h-96 bg-[#807974] border-[#807974] border-4 rounded-xl shadow-sm mt-12 overflow-hidden cursor-pointer"
+        className="ml-32 w-2xl h-96 bg-[#807974] border-[#807974] border-4 rounded-xl shadow-sm mt-40 overflow-hidden cursor-pointer"
         onClick={() => setIsOpen(true)}
       >
         <img
-          className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:-rotate-6 hover:scale-105"
-          src="/project1.jpg"
-          alt="Project 1"
+          className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out "
+          src="/project2.jpg"
+          alt="Project 2"
         />
       </div>
 
@@ -23,8 +23,8 @@ const Card = () => {
           onClick={() => setIsOpen(false)}
         >
           <motion.img
-            src="/project1.jpg"
-            alt="Project 1"
+            src="/project2.jpg"
+            alt="Project 2"
             className="max-w-3xl max-h-[90vh] rounded-lg shadow-lg cursor-pointer"
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
@@ -37,4 +37,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card2;
