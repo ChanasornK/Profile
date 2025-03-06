@@ -36,15 +36,16 @@ const Navbar = () => {
     <div className="fixed top-6 left-0 w-full flex justify-center items-center">
       <div className="relative flex flex-row items-center gap-x-4 px-4 py-2 rounded-full border border-white/50 bg-white/20 backdrop-blur-lg shadow-lg">
         
-       
+        {/* Active Indicator */}
         <motion.div
-          className="absolute top-1/2 left-0 h-8 bg-white/40 rounded-full shadow-lg -translate-y-1/2"
+          layout
+          className="absolute top-1/2 left-0 h-8 bg-[#b8aba1] rounded-full shadow-lg -translate-y-1/2"
           initial={false}
           animate={{
+            x: activeDimensions.left, // ใช้ x แทน left เพื่อให้ transition smooth
             width: activeDimensions.width,
-            left: activeDimensions.left,
           }}
-          transition={{ type: "spring", stiffness: 300, damping: 30, delay: 0.05 }}
+          transition={{ type: "spring", stiffness: 300, damping: 30, ease: "easeInOut" }}
         />
 
         {navItems.map((item, index) => (
