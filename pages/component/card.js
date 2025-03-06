@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const Card = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="ml-20 w-2/3 h-1/3 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700 mt-12 overflow-hidden">
-      <img
-        className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:-rotate-6 hover:scale-105"
-        src="/project1.jpg"
-        alt="Project 1"
-      />
-    </div>
+    <>
+      <div
+        className="ml-20 w-lg h-96 bg-[#807974] border-[#807974] border-4 rounded-xl shadow-sm mt-12 overflow-hidden cursor-pointer"
+        onClick={() => setIsOpen(true)}
+      >
+        <img
+          className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:-rotate-6 hover:scale-105"
+          src="/project1.jpg"
+          alt="Project 1"
+        />
+      </div>
+
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
+          onClick={() => setIsOpen(false)}
+        >
+          <motion.img
+            src="/project1.jpg"
+            alt="Project 1"
+            className="max-w-3xl max-h-[90vh] rounded-lg shadow-lg cursor-pointer"
+            initial={{ scale: 0.8, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            exit={{ scale: 0.8, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 300, damping: 25 }}
+          />
+        </div>
+      )}
+    </>
   );
 };
 
