@@ -10,9 +10,6 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { SiPostman } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
-import { FaPhoneAlt } from "react-icons/fa";
-import { IoMail } from "react-icons/io5";
-import { FaGithub } from "react-icons/fa";
 const About = () => {
   const seeMoreRef = useRef(null); // สร้าง ref สำหรับ div ที่ต้องการเลื่อนไปหา
   const handleScroll = () => {

@@ -25,28 +25,33 @@ const Navbar = () => {
 
     if (activeIndex !== -1 && navRefs.current[activeIndex]) {
       const { offsetWidth, offsetLeft } = navRefs.current[activeIndex];
-      setActiveDimensions({ width: offsetWidth, left: offsetLeft });
+      setActiveDimensions({
+        width: offsetWidth - 16, // ลดขนาด active indicator
+        left: offsetLeft + 8, // ขยับให้ตรงกลาง
+      });
     }
   }, [router.pathname]);
 
   return (
     <div className="fixed top-6 left-0 w-full flex justify-center items-center">
-      <div className="relative flex flex-row items-center gap-x-4  px-4 py-2 rounded-full  ">
+      <div className="relative flex flex-row items-center gap-x-4 px-4 py-2 rounded-full border border-white/50 bg-white/20 backdrop-blur-lg shadow-lg">
+        
+       
         <motion.div
-          className="absolute top-0 left-0 h-full bg-white/40 rounded-full shadow-lg"
+          className="absolute top-1/2 left-0 h-8 bg-white/40 rounded-full shadow-lg -translate-y-1/2"
           initial={false}
           animate={{
             width: activeDimensions.width,
             left: activeDimensions.left,
           }}
-          transition={{ type: "spring", stiffness: 300, damping: 30 }}
+          transition={{ type: "spring", stiffness: 300, damping: 30, delay: 0.05 }}
         />
 
         {navItems.map((item, index) => (
           <Link key={item.path} href={item.path} passHref>
             <div
               ref={(el) => (navRefs.current[index] = el)}
-              className={`relative px-6 py-2 text-black text-lg font-semibold cursor-pointer z-10 transition-all duration-300 flex justify-center hover:scale-125`}
+              className="relative px-6 py-1 text-black text-lg font-semibold cursor-pointer z-10 transition-all duration-300 flex justify-center hover:scale-110"
               style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
             >
               {item.name}
