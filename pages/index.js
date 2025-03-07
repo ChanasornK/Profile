@@ -9,7 +9,9 @@ import { FaGithub } from "react-icons/fa";
 const Index = () => {
   const fullText = "Frontend Developer";
   const router = useRouter();
-  
+  const goContact=()=>{
+    router.push('./contact')
+  }
   return (
     <>
       <Head>
@@ -79,7 +81,7 @@ const Index = () => {
                 <p className="font-[M_PLUS_Rounded_1c] font-bold text-4xl mt-5">
                   great thing together
                 </p>
-                <button
+                <button  onClick={goContact}
                  
                   className="cursor-pointer bg-[#622A1F]  text-white font-semibold py-2 px-5 
                 rounded-lg shadow-lg transition-all duration-300 ease-in-out transform hover:scale-125 mt-20"

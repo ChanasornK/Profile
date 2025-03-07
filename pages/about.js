@@ -16,6 +16,7 @@ import { FcCollaboration } from "react-icons/fc";
 import { FaBookOpen } from "react-icons/fa6";
 import { MdOutlineSyncProblem } from "react-icons/md";
 import { AiOutlineFieldTime } from "react-icons/ai";
+
 const About = () => {
   const seeMoreRef = useRef(null); // สร้าง ref สำหรับ div ที่ต้องการเลื่อนไปหา
   const handleScroll = () => {
@@ -54,7 +55,7 @@ const About = () => {
             </button>
           </div>
 
-          <div className="w-1/2 flex justify-center mt-20 ml-40">
+          <div className="w-1/2 flex justify-center mt-20 ml-40 " >
             <div className="w-96 h-96 border-2 border-[#622A1F] rounded-full overflow-hidden">
               <img
                 className="w-full h-full object-cover"
@@ -153,6 +154,7 @@ const About = () => {
           </div>
         </div>
       </div>
+    
     </>
   );
 };
