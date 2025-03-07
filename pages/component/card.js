@@ -7,7 +7,7 @@ const Card = () => {
   return (
     <>
       <div
-        className="ml-20 w-2xl h-96 bg-[#807974] border-[#807974] border-4 rounded-xl shadow-sm mt-12 overflow-hidden cursor-pointer"
+        className="ml-20 w-xl h-96 bg-[#807974] border-[#807974] border-4 rounded-xl shadow-sm mt-12 overflow-hidden cursor-pointer"
         onClick={() => setIsOpen(true)}
       >
         <img

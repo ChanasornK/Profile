@@ -61,7 +61,7 @@ const Index = () => {
         </div>
         <div className="w-1/2 h-dvh bg-[#F6F7F0] flex items-center justify-center">
           <img
-            src="/profile1.jpg"
+            src="/project3.jpg"
             alt="Profile Image"
             className="w-[80%] h-auto object-contain border-4 border-[#622A1F] rounded-lg shadow-lg transition-all duration-300  hover:scale-110"
           />
@@ -90,7 +90,7 @@ const Index = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 h-72 text-black pt-10   ">
+        <div className="w-1/2  text-black pt-10   ">
           <div className="text-black mt-4 text-xl font-[M_PLUS_Rounded_1c] font-semibol ml-2">
             CONTACT ME
           </div>
