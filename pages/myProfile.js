@@ -19,7 +19,7 @@ const MyProfile = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   return (
     <>
-    <Head>
+      <Head>
         <title>My Profile</title>
         <link rel="icon" href="/logo.png" type="image/png" />
       </Head>
@@ -27,7 +27,10 @@ const MyProfile = () => {
       <Navbar2 />
       <div className="w-full h-dvh flex">
         <div className="w-full bg-[#D4C8BE] ">
-          <div className="mt-28 text-4xl font-bold text-[#976C62] text-center md:text-5xl px-4">
+          <div
+            style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+            className="mt-28 text-4xl font-bold text-[#976C62] text-center md:text-5xl px-4"
+          >
             Curated Work
             <Card />
           </div>
@@ -60,8 +63,11 @@ const MyProfile = () => {
           className="w-full bg-[#E7DFD5] h-dvh hidden xl:block
        "
         >
-          <div className="mt-64 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-xl flex items-center gap-3 ml-10 ">
-            <span className="font-bold mb-5 text-2xl">
+          <div className="mt-56 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-xl flex items-center gap-3 ml-10 ">
+            <span
+              style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+              className="font-bold mb-5 text-2xl"
+            >
               IOT TO ALERT LIQUID LEVEL BELOW CRITICAL
             </span>
           </div>
@@ -81,33 +87,37 @@ const MyProfile = () => {
               real-time water levels.
             </span>
           </div>
+          <div className=" w-24 flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-xl shadow-md mt-18 ml-14">
+            <SiCplusplus className="text-2xl text-green-500" />
+            <span className="text-lg ml-2 text-black">C++</span>
+          </div>
         </div>
       </div>
       <div className="flex">
         <div className="w-full h-dvh bg-[#d4c8be] lg:block px-4 xl:px-0 pt-10">
           <Card2 />
-            {/* คำใต้รูป */}
-            <div className="mt-10 xl:hidden text-[#622A1F] font-[M_PLUS_Rounded_1c]  flex text-start gap-3 ml-10">
-              <span className="font-bold mb-3 text-xs sm:text-xl ">
-                ReviewZone Web Application
-              </span>
-            </div>
-            <div className=" flex items-start gap-2 ml-4 xl:hidden">
-              <LuSparkle className="text-[#C4744D] text-2xl mt-1 ml-4" />
-              <span className=" text-[#622A1F] font-serif mt-1 w-3/4 text-xs sm:text-xl ">
-                Create a product search and filter system that allows users to
-                search for products using keywords to access the desired product
-                information
-              </span>
-            </div>
-            <div className=" flex items-start gap-2 ml-4 xl:hidden">
-              <LuSparkle className="text-[#C4744D] text-2xl mt-4 ml-4 " />
-              <span className=" text-[#622A1F] mt-4 w-3/4 font-serif text-xs sm:text-xl">
-                Create a user register and login page to securely store user
-                information along with an OTP-based password recovery feature
-                for users
-              </span>
-            </div>
+          {/* คำใต้รูป */}
+          <div className="mt-10 xl:hidden text-[#622A1F] font-[M_PLUS_Rounded_1c]  flex text-start gap-3 ml-6">
+            <span className="font-bold mb-3 text-xs sm:text-xl ">
+              ReviewZone Web Application
+            </span>
+          </div>
+          <div className=" flex items-start gap-2 ml-1 xl:hidden">
+            <LuSparkle className="text-[#C4744D] text-2xl mt-1 ml-4" />
+            <span className=" text-[#622A1F] font-serif mt-1 w-3/4 text-xs sm:text-xl ">
+              Create a product search and filter system that allows users to
+              search for products using keywords to access the desired product
+              information
+            </span>
+          </div>
+          <div className=" flex items-start gap-2 ml-1 xl:hidden">
+            <LuSparkle className="text-[#C4744D] text-2xl mt-4 ml-4 " />
+            <span className=" text-[#622A1F] mt-4 w-3/4 font-serif text-xs sm:text-xl">
+              Create a user register and login page to securely store user
+              information along with an OTP-based password recovery feature for
+              users
+            </span>
+          </div>
           <div className="mt-10 xl:ml-48  ml-14 xl:mt-10">
             <button
               className="xl:block bg-[#C4744D] text-white xl:p-2 p-1 rounded-lg shadow-md cursor-pointer transition-all duration-300 ease-in-out transform hover:scale-125"
@@ -115,12 +125,14 @@ const MyProfile = () => {
             >
               See More
             </button>
-        
           </div>
         </div>
         <div className="w-full h-dvh bg-[#E7DFD5] hidden xl:block ">
-          <div className="mt-20 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-xl  gap-3 ml-10 ">
-            <span className="font-bold mb-5 text-2xl text-start">
+          <div className="mt-24 text-[#622A1F] font-[M_PLUS_Rounded_1c] text-xl  gap-3 ml-10 ">
+            <span
+              style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+              className="font-bold mb-5 text-2xl text-start"
+            >
               ReviewZone Web Application
             </span>
           </div>
@@ -144,32 +156,67 @@ const MyProfile = () => {
             <div className="mt-10 grid grid-cols-3 gap-3 justify-center">
               <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md  w-auto">
                 <RiNextjsFill className="text-2xl " />
-                <span className="text-lg ">NextJS</span>
+                <span
+                  style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+                  className="text-lg "
+                >
+                  NextJS
+                </span>
               </div>
               <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md w-auto">
                 <FaReact className="text-2xl text-blue-500" />
-                <span className="text-lg">React</span>
+                <span
+                  style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+                  className="text-lg"
+                >
+                  React
+                </span>
               </div>
               <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md w-auto">
                 <RiTailwindCssFill className="text-2xl text-blue-500 " />
-                <span className="text-lg">TailwindCss</span>
+                <span
+                  style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+                  className="text-lg"
+                >
+                  TailwindCss
+                </span>
               </div>
 
               <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md mt-8 w-auto">
                 <IoLogoJavascript className="text-2xl text-yellow-500" />
-                <span className="text-lg">JavaScript</span>
+                <span
+                  style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+                  className="text-lg"
+                >
+                  JavaScript
+                </span>
               </div>
               <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md mt-8 w-auto">
                 <FaNodeJs className="text-2xl text-green-700" />
-                <span className="text-lg">NodeJS</span>
+                <span
+                  style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+                  className="text-lg"
+                >
+                  NodeJS
+                </span>
               </div>
               <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md mt-8 w-auto">
                 <FaHtml5 className="text-2xl text-orange-500" />
-                <span className="text-lg">HTML</span>
+                <span
+                  style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+                  className="text-lg"
+                >
+                  HTML
+                </span>
               </div>
               <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md mt-8 w-auto">
                 <FaCss3Alt className="text-2xl text-blue-500" />
-                <span className="text-lg">CSS</span>
+                <span
+                  style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+                  className="text-lg"
+                >
+                  CSS
+                </span>
               </div>
             </div>
           </div>

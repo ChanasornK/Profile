@@ -4,6 +4,7 @@ import Navbar from "./component/navbar";
 import { FaPhoneAlt } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
+import Navbar2 from "./component/navbar2";
 const contact = () => {
   return (
     <>
@@ -12,33 +13,49 @@ const contact = () => {
         <link rel="icon" href="/logo.png" type="image/png" />
       </Head>
       <Navbar />
+      <Navbar2 />
       <div className="flex">
-        <div className="bg-[#D4C8BE] w-1/2 h-dvh flex justify-center">
-          <div className="mt-42 text-4xl font-bold bg-[#976C62] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)] text-center">
+        <div className="bg-[#D4C8BE] xl:w-1/2 h-dvh flex justify-center w-full">
+          <div
+          style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }} className="mt-42 text-4xl font-bold text-[#976C62] text-center">
             Contact Me
-            <div className="text-[#622A1F]  mt-14 ml-20 flex items-center space-x-2 text-md text-2xl">
+            <div
+              style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+              className="text-[#622A1F]  mt-14 ml-12 flex items-center space-x-2 text-md text-sm xl:text-xl"
+            >
               <FaPhoneAlt />
               <span>095-8462169</span>
             </div>
-            <div className="text-[#622A1F] mt-5 ml-20 flex items-center space-x-2 text-md text-2xl">
+            <div
+              style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+              className="text-[#622A1F] mt-5 ml-12 flex items-center space-x-2  text-sm xl:text-xl"
+            >
               <IoMail />
               <span>chanasorn.kn@gmail.com</span>
             </div>
-            <div className="text-[#622A1F] mt-5 ml-20 flex items-center space-x-2 text-md text-2xl">
+            <div
+              style={{ fontFamily: "'M PLUS Rounded 1c', sans-serif" }}
+              className="text-[#622A1F] mt-5 ml-12 flex items-center space-x-2 text-sm xl:text-xl"
+            >
               <FaGithub />
-              <span>https://github.com/ChanasornK/Profile.git</span>
+              <a
+                href="https://github.com/ChanasornK/Profile.git"
+                target="_blank"
+              >
+              https://github.com/ChanasornK/Profile.git
+              </a>
             </div>
           </div>
         </div>
-        <div className="w-1/2 flex justify-center  bg-[#E9DAD0]">
-            <div className="w-96 h-96 border-2 border-[#622A1F] rounded-full overflow-hidden mt-40 mr-40">
-              <img
-                className="w-full h-full object-cover"
-                src="/profile3.jpg"
-                alt="Profile"
-              />
-            </div>
+        <div className="xl:w-1/2 hidden xl:block  justify-center  bg-[#E9DAD0]">
+          <div className="w-96 h-96 border-2 border-[#622A1F] rounded-full overflow-hidden mt-40 ml-40">
+            <img
+              className="w-full h-full object-cover"
+              src="/profile3.jpg"
+              alt="Profile"
+            />
           </div>
+        </div>
       </div>
     </>
   );

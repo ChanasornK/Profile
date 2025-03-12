@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "./component/navbar";
 import Navbar2 from "./component/navbar2";
 import { FaPhoneAlt } from "react-icons/fa";
@@ -6,6 +6,7 @@ import { IoMail } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa";
 import { useRouter } from "next/router";
 import Head from "next/head";
+import { TypeAnimation } from "react-type-animation";
 const Index = () => {
   const router = useRouter();
   const goContact = () => {
@@ -13,7 +14,7 @@ const Index = () => {
   };
   return (
     <>
-    <Head>
+      <Head>
         <title>Home</title>
         <link rel="icon" href="/logo.png" type="image/png" />
       </Head>
@@ -28,7 +29,17 @@ const Index = () => {
         </div>
 
         <div className="w-full bg-[#D4C8BE] h-dvh md:text-6xl text-2xl flex justify-center items-center text-[#622A1F] font-bold">
-          Frontend Developer
+          <TypeAnimation
+            sequence={["Frontend Developer", 1000, "Chanasorn Khemnak", 2000]}
+            wrapper="span"
+            speed={30}
+            style={{
+              display: "inline-block",
+              fontSize: "",
+              fontFamily: "'M PLUS Rounded 1c', sans-serif",
+            }}
+            repeat={Infinity}
+          />
         </div>
 
         <Navbar2 />
@@ -47,7 +58,8 @@ const Index = () => {
             md:max-w-3xl md:text-2xl 
             text-left 
             md:ml-10 
-            md:mt-20"
+            md:mt-20 xl:mt-8"
+            
           >
             A passionate web developer with a keen eye for crafting dynamic and
             responsive web experiences. Specializing in frontend developer, I

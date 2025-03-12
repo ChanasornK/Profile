@@ -5,16 +5,21 @@ import { FaHome } from "react-icons/fa";
 import { IoMdContact } from "react-icons/io";
 import { IoMail } from "react-icons/io5";
 import { FaInfoCircle } from "react-icons/fa";
+import { useRouter } from "next/router";
 const Navbar2 = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+   const router = useRouter();
   const toggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
   };
-
+  const chanasorn=()=>{
+      router.push('../')
+  }
   return (
     <>
       <div className="p-4 fixed  xl:hidden w-full bg-[#BA8C7B] ">
-        CHANASORN
+        
+        <button onClick={chanasorn}>CHANASORN</button>
         <button onClick={toggleMenu}>
           <IoMdMenu className="text-3xl text-[#622A1F] fixed right-5 top-3" />
         </button>
