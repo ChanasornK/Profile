@@ -5,7 +5,6 @@ const images = [
   "/project7.jpg",
   "/project3.jpg",
   "/project2.jpg",
-  
 ];
 
 const Picture = () => {
@@ -49,14 +48,14 @@ const Picture = () => {
       </div>
 
       <button
-        className="absolute top-1/2 left-[-52px] transform -translate-y-1/2 bg-[#976C62] w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+        className="absolute top-1/2 left-[-24px] xl:left-[-48] xl:top-1/2 transform -translate-y-1/2 bg-[#976C62] w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
         onClick={prevSlide}
       >
         ◀
       </button>
 
       <button
-        className="absolute top-1/2 right-[-52px] transform -translate-y-1/2 bg-[#976C62] w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
+          className="absolute top-1/2 right-[-24px] xl:right-[-48] xl:top-1/2  transform -translate-y-1/2 bg-[#976C62] w-10 h-10 flex items-center justify-center rounded-full cursor-pointer"
         onClick={nextSlide}
       >
         ▶

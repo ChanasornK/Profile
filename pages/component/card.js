@@ -7,11 +7,11 @@ const Card = () => {
   return (
     <>
       <div
-        className="ml-20 w-xl h-96 bg-[#807974] border-[#807974] border-4 rounded-xl shadow-sm mt-12 overflow-hidden cursor-pointer"
+        className=" xl:max-w-md h-full xl:ml-32 bg-[#807974] border-[#807974]  rounded-xl shadow-sm mt-12 overflow-hidden cursor-pointer "
         onClick={() => setIsOpen(true)}
       >
         <img
-          className="w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:-rotate-6 hover:scale-105"
+          className=" flex justify-center w-full h-full object-cover rounded-lg transition-transform duration-300 ease-in-out hover:-rotate-6 hover:scale-105"
           src="/project1.jpg"
           alt="Project 1"
         />

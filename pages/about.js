@@ -16,7 +16,7 @@ import { FcCollaboration } from "react-icons/fc";
 import { FaBookOpen } from "react-icons/fa6";
 import { MdOutlineSyncProblem } from "react-icons/md";
 import { AiOutlineFieldTime } from "react-icons/ai";
-
+import Navbar2 from "./component/navbar2";
 const About = () => {
   const seeMoreRef = useRef(null); // สร้าง ref สำหรับ div ที่ต้องการเลื่อนไปหา
   const handleScroll = () => {
@@ -26,12 +26,13 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About Me </title>
+        <title>About </title>
         <link rel="icon" href="/logo.png" type="image/png" />
       </Head>
       <div className="bg-white w-full h-dvh">
         <Navbar />
-        <div className="w-full h-dvh bg-[#D4C8BE] flex items-center justify-center px-32">
+        <Navbar2 />
+        {/* <div className="w-full h-dvh bg-[#D4C8BE] flex items-center justify-center px-32">
           <div className="w-1/2 text-[#622A1F] font-[M_PLUS_Rounded_1c]">
             <h2 className="text-lg font-bold ml-40 mt-10]">MORE ABOUT ME</h2>
             <h1 className="mt-4 text-5xl font-bold ml-40  bg-[#976C62] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)] ">
@@ -55,38 +56,39 @@ const About = () => {
             </button>
           </div>
 
-          <div className="w-1/2 flex justify-center mt-20 ml-40 " >
-            <div className="w-96 h-96 border-2 border-[#622A1F] rounded-full overflow-hidden">
-              <img
+          <div className="w-full justify-center mt-20 ml-40 hidden xl:block " >
+            <div className="w-96 h-96 border-2 border-[#622A1F] rounded-full overflow-hidden  flex">
+            <img
                 className="w-full h-full object-cover"
                 src="/profile2.jpg"
                 alt="Profile"
               />
             </div>
-          </div>
-        </div>
+          </div> 
+        </div> */}
 
-        <div ref={seeMoreRef} className="w-full h-dvh flex">
-          <div className="bg-[#E7DFD5] w-1/2 h-dvh ">
+        <div ref={seeMoreRef} className=" ">
+        <div className=" xl:flex">
+         
+          <div className="bg-[#E7DFD5] xl:w-1/2 h-dvh xl:h-dvh px-4 xl:px-0 flex flex-col ">
             <div
-              className="flex justify-center mt-40 text-4xl font-semibold font-[M_PLUS_Rounded_1c] 
-            bg-[#976C62] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)]"
+              className="flex justify-center mt-40 xl:mt-40 text-4xl font-semibold font-[M_PLUS_Rounded_1c] 
+      bg-[#976C62] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)]"
             >
               My Tech Stack
             </div>
-
             <div className="mt-5 flex items-center justify-center text-black gap-2">
               <div className="mt-10 grid grid-cols-3 gap-6 justify-center">
-                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md ">
-                  <RiNextjsFill className="text-2xl " />
-                  <span className="text-lg ">NextJS</span>
+                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
+                  <RiNextjsFill className="text-2xl" />
+                  <span className="text-lg">NextJS</span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
                   <FaReact className="text-2xl text-blue-500" />
                   <span className="text-lg">React</span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
-                  <RiTailwindCssFill className="text-2xl text-blue-500 " />
+                  <RiTailwindCssFill className="text-2xl text-blue-500" />
                   <span className="text-lg">TailwindCss</span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md mt-8">
@@ -120,41 +122,44 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className="bg-[#BA8C7B] w-1/2 h-dvh ">
+          <div className="bg-[#BA8C7B] xl:w-1/2 h-dvh xl:h-dvh flex flex-col ">
             <div
-              className="flex justify-center mt-40 text-4xl font-semibold font-[M_PLUS_Rounded_1c] 
+              className="flex justify-center mt-20 xl:mt-40 text-4xl font-semibold 
             bg-[#E7DFD5] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(160,82,45,0.8)]"
             >
               My Soft Skill
             </div>
             <div className="mt-6 flex items-center justify-center text-black gap-2">
-              <div className="mt-14 grid grid-cols-3 gap-8 justify-center">
-                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md  ">
-                  <IoPeopleSharp className="text-2xl text-blue-500 " />
-                  <span className="text-sm font-[M_PLUS_Rounded_1c] ">Communication</span>
+              <div className="mt-14 grid xl:grid-cols-3 gap-8 justify-center">
+                <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
+                  <IoPeopleSharp className="text-2xl text-blue-500" />
+                  <span className="text-sm font-[M_PLUS_Rounded_1c]">
+                    Communication
+                  </span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
                   <FcCollaboration className="text-2xl text-blue-500" />
                   <span className="text-sm">Collaboration</span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
-                  <FaBookOpen className="text-2xl text-pink-500 " />
+                  <FaBookOpen className="text-2xl text-pink-500" />
                   <span className="text-sm">Quick Learner</span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
-                  <MdOutlineSyncProblem className="text-2xl text-red-500 " />
+                  <MdOutlineSyncProblem className="text-2xl text-red-500" />
                   <span className="text-sm">Problem solving</span>
                 </div>
                 <div className="flex items-center justify-center gap-1 bg-gray-200 p-2 rounded-lg shadow-md">
-                <AiOutlineFieldTime className="text-2xl text-green-400 " />
+                  <AiOutlineFieldTime className="text-2xl text-green-400" />
                   <span className="text-sm">Time management</span>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+        </div>
       </div>
-    
     </>
   );
 };

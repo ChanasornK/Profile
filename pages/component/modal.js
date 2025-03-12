@@ -23,7 +23,7 @@ const Modal = ({ isOpen, onClose }) => {
           exit={{ opacity: 0 }}
         >
           <motion.div
-            className="bg-gray-100 p-6 rounded-lg shadow-lg w-[900px] border-2 border-amber-300"
+            className="bg-gray-100 p-6 rounded-lg shadow-lg xl:w-[900px] border-2 border-amber-300 w-[750px]"
             onClick={(e) => e.stopPropagation()}
             initial={{ scale: 0.8, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}

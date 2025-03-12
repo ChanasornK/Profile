@@ -7,7 +7,7 @@ const Card2 = () => {
   return (
     <>
       <div
-        className="ml-32 w-xl h-96 bg-[#807974] border-[#807974] border-4 rounded-xl shadow-sm mt-40 overflow-hidden cursor-pointer"
+         className=" xl:max-w-md h-auto xl:ml-32 bg-[#807974] border-[#807974]  rounded-xl shadow-sm mt-12 overflow-hidden  "
         onClick={() => setIsOpen(true)}
       >
         <img
@@ -17,7 +17,7 @@ const Card2 = () => {
         />
       </div>
 
-      {isOpen && (
+      {/* {isOpen && (
         <div
           className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50"
           onClick={() => setIsOpen(false)}
@@ -32,7 +32,7 @@ const Card2 = () => {
             transition={{ type: "spring", stiffness: 300, damping: 25 }}
           />
         </div>
-      )}
+      )} */}
     </>
   );
 };
